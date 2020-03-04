@@ -2,12 +2,18 @@
 <html>
   <head>
     <title>Snake Game</title>
-    <link href = "css/bootstrap.css" rel = "stylesheet" type = "text/css">
-    <link href = "css/styles.css" rel = "stylesheet" type = "text/css">
-    
+    <link href="./css/styles.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
   </head>
-  <body background = "img/black.jpeg" class = "bg-dark">
-    <div>
+  <body>
+    <div id="Loader">
+        <div>
+            <img src="./images/snake.png" alt="">
+            <p>SNAKEGAME loading....</p>
+        </div>
+    </div>
+    <div id="head" class="container-fluid onLoad">
     <h1 class = "name" align = "center">Snake Game</h1>
 
     <img class = "image" = "center" src = "img/download.jpeg" alt = "snake game">
@@ -15,6 +21,10 @@
     <form align = "center">
       <button align = "center" class = "button">New User</button>
     </form>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>    
+    <script src="./js/snake.js"></script>
     </div>
+</body>
+
   </body>
 </html>
