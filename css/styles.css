@@ -1,11 +1,68 @@
+/* PRE-LOADER SECTION STYLING */
+#Loader{
+    position:fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgb(24, 48, 14);
+    z-index: 3000;
+  }
+  #Loader div{
+    margin-top: 40vh; 
+  }
+  #Loader div p{
+    padding-top: 30px;
+    color: black;
+    align-content: center;
+    margin-left: 0%;
+    font-family: 'Oxanium', cursive;
+    font-size:25pt;
+  }
+  #Loader div img{
+    width: 100px;
+    height:100px;
+    animation: pulse 1.5s linear infinite;
+    border-radius: 50%;
+    transform: scale(0.5);
+    box-shadow: 0 0 0px #000;
+    margin-left: 0%;
+  
+  }
+  @keyframes pulse{
+    0%{box-shadow: 0 0 0px #000; transform: scale(1.3);}
+    30%{box-shadow: 0 0 0px #000; transform: scale(0.);}
+    50%{box-shadow: 0 0 0px #000; transform: scale(0.6);}
+    70%{box-shadow: 0 0 70px #000; transform: scale(1.2);}
+    95%{box-shadow: 0 0 70px #000;transform: scale(1.3);}
+    100%{box-shadow: 0 0 130px #000;transform: scale(1.3);}
+  }
+  .beforeLoad{
+    transform: translateY(100vh);
+  }
+  .onLoad{
+    transform: translateY(0);
+  }
+  
+/*Other styles */
+body{
+    text-align: center;
+    font-family: 'Tomorrow', ;
+    background:black;
+  }
+
 .button {
   width: 40%;
   background-color:green;
 }
 .image {
-  padding-left: 575px;
+  padding-left: 50px;
   padding-bottom: 20px;
 }
 .name {
   color:red;
+  margin-left: 2%;
+}
+body{
+    background:"img/black.jpeg" class = "bg-dark";
+
 }
