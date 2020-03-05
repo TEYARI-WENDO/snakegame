@@ -2,3 +2,10 @@ canvas{
     display: block;
     margin: 0 auto;
 }
+
+#overlay{
+    color: green;
+    font-size: 18px;
+    padding-bottom: 8%;
+    
+}
