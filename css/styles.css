@@ -50,10 +50,17 @@ body{
     background:black;
   }
 
-.button {
-  width: 40%;
-  background-color:green;
+a:link, a:visited {
+  background-color:red;
+  color:black;
+  padding: 15px 70px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
 }
+
 .image {
   padding-left: 50px;
   padding-bottom: 20px;

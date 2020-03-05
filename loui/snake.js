@@ -1,4 +1,6 @@
 
+
+
 const cvs = document.getElementById("snake");
 const ctx = cvs.getContext("2d");
 
@@ -14,7 +16,7 @@ const foodImg = new Image();
 foodImg.src = "img/food.png";
 
 const trophy = new Image();
-trophy.src = "img/trophy2.png";
+trophy.src = "img/highscore.png";
 
 const exit = new Image();
 exit.src = "img/x3.png";
@@ -56,7 +58,7 @@ let food = {
 
 let score = 0;
 
-let highscore=0;
+let highscore = 0;
 
 //control the snake
 
@@ -154,12 +156,33 @@ function draw(){
     ctx.fillStyle = "white";
     ctx.font = "45px Changa one";
     ctx.fillText(score,2*box,1.6*box);
+    }
+    
 
+  function checkscore(score){
+    if(localStorage.getItem('highscore') === null){
+        //If there is no high score
+        localStorage.setItem('highscore',score);
+    } else {
+        //If there is a high score
+        if(score > localStorage.getItem('highscore')){
+            localStorage.setItem('highscore',score);
+        }
+    }
+    
+    $('#high_score').html('High Score: '+localStorage.highscore);
 }
 
-// call draw function every 100 ms
+function resetScore(){
+	localStorage.highscore = 0;
+	//Display High Score
+	highscorediv = document.getElementById('high_score');
+	highscorediv.innerHTML ='High Score: 0';
+}
 
-let game = setInterval(draw,100);
+// call draw function every 100 ms /speed of the snake
+
+let game = setInterval(draw,110);
 
 
 
