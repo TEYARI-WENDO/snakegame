@@ -50,16 +50,7 @@ body{
     background:black;
   }
 
-a:link, a:visited {
-  background-color:red;
-  color:black;
-  padding: 15px 70px;
-  text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 30px;
-}
+
 
 .image {
   padding-left: 50px;
@@ -168,4 +159,17 @@ body{
   border-radius:15px;
   background-color:rgb(27, 139, 27);
   font-family: 'Abril Fatface', cursive;
+}
+a:link, a:visited {
+  background-color:transparent;
+  color:black;
+  /*padding: 40px 70px;*/
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  width: 350px;
+  height: 40px;
+  border-radius:6px;
 }
