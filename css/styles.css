@@ -50,11 +50,6 @@ body{
     background:black;
   }
 
-.button {
-  width: 40%;
-  background-color:green;
-}
-
 a:link, a:visited {
   background-color:red;
   color:black;
