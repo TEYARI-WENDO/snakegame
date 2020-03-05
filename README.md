@@ -20,6 +20,7 @@ The Snake Game is an old game that has undergone graphical revamp and uses vario
 There are currently no known bugs
 
 ### LIVE LINK
+ https://we-githaka.github.io/snakegame/
 
 ## CONTACT INFORMATION
 
