@@ -10,11 +10,11 @@
                 <div id="overlay">
                     Your Final Score: <span id="final_score"></span>
                     <br>
-                    <button><a onClick="window.location.reload()" >Play Again</a></button>
+                    <button onClick="window.location.reload()" type="button" class="btn btn-success">Play Again</button>
                     </div>
                      <div id="score"></div>
                     <div id="high_score"></div>
-                    <button onclick="resetScore()" id="reset_score">Reset High Score</button>    
+                    <button onclick="resetScore()" id="reset_score" type="button" class="btn btn-success">Reset High Score</button>    
             </div>
             <div class="col-md-6">
                 <canvas id="snake" width="608" height="608"></canvas>
