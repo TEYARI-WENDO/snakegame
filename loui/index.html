@@ -1,21 +1,27 @@
 <html>
     <head>
         <link href="styles.css" rel="stylesheet" type="text/css">
+        <link href="bootstrap.css" rel="stylesheet" type="text/css">
         <title>Snake Game</title>
      </head>
      <div class="container">
-        <div id="overlay">
-            Your Final Score: <span id="final_score"></span>
-            <br>
-            <button><a onClick="window.location.reload()" >Play Again</a></button>
+         <div class="row">
+             <div class="col-md-6">
+                <div id="overlay">
+                    Your Final Score: <span id="final_score"></span>
+                    <br>
+                    <button><a onClick="window.location.reload()" >Play Again</a></button>
+                    </div>
+                     <div id="score"></div>
+                    <div id="high_score"></div>
+                    <button onclick="resetScore()" id="reset_score">Reset High Score</button>    
+            </div>
+            <div class="col-md-6">
+                <canvas id="snake" width="608" height="608"></canvas>
+            </div>
+        </div>   
         </div>
         
-            <div id="score"></div>
-            <div id="high_score"></div>
-            <button onclick="resetScore()" id="reset_score">Reset High Score</button>
-            <canvas id="snake" width="608" height="608"></canvas>
-        </div>
-    </div>
     <!--links-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="snake.js"></script>
