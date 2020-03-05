@@ -66,3 +66,99 @@ body{
     background:"img/black.jpeg" class = "bg-dark";
 
 }
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color:white;
+  font-family: 'Oxanium', cursive;
+  padding-left: 90px;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 500px;
+  height: 300px;
+  background-color: black;
+  color:rgb(27, 139, 27) ;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 25%;
+  left: none;
+  right: -100%;
+  margin-left: none;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.button1{
+  color: greenyellow;
+  border-color: rgb(145, 58, 58);
+  width: 350px;
+  height: 40px;
+  border-radius:6px;
+  background-color:brown;
+}
+.button2{
+  color: greenyellow;
+  border-color: rgb(145, 58, 58);
+  width: 350px;
+  height: 40px;
+  border-radius:6px;
+  background-color:brown;
+  
+}
+.button3{
+  color: greenyellow;
+  border-color: rgb(145, 58, 58);
+  width: 350px;
+  height: 40px;
+  border-radius:6px;
+  background-color:brown;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+.button4{
+  color: rgb(145, 58, 58);
+  border-color: rgb(145, 58, 58);
+  font-size:20pt;
+  width: 250px;
+  height: 35px;
+  border-radius:15px;
+  background-color:rgb(27, 139, 27);
+  font-family: 'Abril Fatface', cursive;
+}
