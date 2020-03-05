@@ -180,9 +180,9 @@ function resetScore(){
 	highscorediv.innerHTML ='High Score: 0';
 }
 
-// call draw function every 100 ms
+// call draw function every 100 ms /speed of the snake
 
-let game = setInterval(draw,120);
+let game = setInterval(draw,110);
 
 
 
