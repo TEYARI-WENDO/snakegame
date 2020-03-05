@@ -158,13 +158,31 @@ function draw(){
     ctx.fillText(score,2*box,1.6*box);
     }
     
-//highscore
 
+  function checkscore(score){
+    if(localStorage.getItem('highscore') === null){
+        //If there is no high score
+        localStorage.setItem('highscore',score);
+    } else {
+        //If there is a high score
+        if(score > localStorage.getItem('highscore')){
+            localStorage.setItem('highscore',score);
+        }
+    }
+    
+    $('#high_score').html('High Score: '+localStorage.highscore);
+}
 
+function resetScore(){
+	localStorage.highscore = 0;
+	//Display High Score
+	highscorediv = document.getElementById('high_score');
+	highscorediv.innerHTML ='High Score: 0';
+}
 
 // call draw function every 100 ms
 
-let game = setInterval(draw,100);
+let game = setInterval(draw,120);
 
 
 
