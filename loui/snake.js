@@ -43,7 +43,7 @@ down.src = "audio/down.mp3";
 let snake = [];
 
 snake[0] = {
-    x : 10* box,
+  x : 10* box,
     y : 10* box
 };
 
