@@ -5,7 +5,8 @@ canvas{
 
 #overlay{
     color: green;
-    font-size: 18px;
-    padding-bottom: 8%;
+    font-size: 20px;
+    padding-bottom: 6%;
+    font-weight: 800;
     
 }
