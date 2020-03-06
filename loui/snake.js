@@ -154,6 +154,12 @@ function draw(){
     if(snakeX < box || snakeX > 17 * box || snakeY < 3*box || snakeY > 17*box || collision(newHead,snake)){
         clearInterval(game);
         dead.play();
+
+        //Insert Final Score
+		$('#final_score').html(score);
+			//Show Overlay
+		$('#overlay').fadeIn(300);
+			return;
     }
     
     snake.unshift(newHead);
@@ -163,10 +169,10 @@ function draw(){
     ctx.fillText(score,2*box,1.6*box);
     }
     
-
   function checkscore(score){
     if(localStorage.getItem('highscore') === null){
         //If there is no high score
+
         localStorage.setItem('highscore',score);
     } else {
         //If there is a high score
@@ -176,10 +182,12 @@ function draw(){
     }
     
     $('#high_score').html('High Score: '+localStorage.highscore);
+
 }
 
 function resetScore(){
-	localStorage.highscore = 0;
+    localStorage.highscore = 0;
+    
 	//Display High Score
 	highscorediv = document.getElementById('high_score');
 	highscorediv.innerHTML ='High Score: 0';
@@ -187,7 +195,7 @@ function resetScore(){
 
 // call draw function every 100 ms /speed of the snake
 
-let game = setInterval(draw,120);
+let game = setInterval(draw,130);
 
 
 
