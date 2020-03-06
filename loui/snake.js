@@ -195,10 +195,6 @@ function resetScore(){
 
 // call draw function every 100 ms /speed of the snake
 
-
-let game = setInterval(draw,130);
-
-let game = setInterval(draw,110);
 let game = setInterval(draw,130);
 
 
