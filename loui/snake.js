@@ -143,7 +143,12 @@ function draw(){
         x : snakeX,
         y : snakeY
     }
-    
+    //Check Score
+		checkscore(score);
+		
+	//Display Current Score
+        $('#score').html('Your Score: '+score);
+        
     // game over
     
     if(snakeX < box || snakeX > 17 * box || snakeY < 3*box || snakeY > 17*box || collision(newHead,snake)){
@@ -182,7 +187,7 @@ function resetScore(){
 
 // call draw function every 100 ms /speed of the snake
 
-let game = setInterval(draw,110);
+let game = setInterval(draw,120);
 
 
 
