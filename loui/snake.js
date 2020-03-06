@@ -44,7 +44,7 @@ let snake = [];
 
 snake[0] = {
     x : 10* box,
-    y : 8* box
+    y : 10* box
 };
 
 // create the food
